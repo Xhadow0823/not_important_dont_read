@@ -1,5 +1,5 @@
 # from simulator.logger import Logger
-from simulator.simulator import Simulator
+from simulator.simulator import Simulation, simulate
 
 ######################################################
 def __test():

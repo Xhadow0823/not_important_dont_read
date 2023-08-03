@@ -1,6 +1,6 @@
 import argparse
 import json
-from type import ArgsType
+from common import types
 
 def model_config_parser(filepath: str) -> dict:
     config = None
@@ -15,7 +15,7 @@ def platform_config_parser(filepath: str) -> dict:
     return config
 
 
-def arg_parser() -> ArgsType:
+def arg_parser() -> types.ArgsType:
     parser = argparse.ArgumentParser(description="Please provide the model config file and platform config file.")
     parser.add_argument("-m", "--model", type=str, required=False,     default='model.json',
                         help="model config file for simulation")
@@ -25,7 +25,12 @@ def arg_parser() -> ArgsType:
                         help="trace file name that simulator will generator")
     args = parser.parse_args()
     return args
+#############################################################################
 
+def prepare_environment() -> type[types.Environment]:
+    return dict()
+
+#############################################################################
 def __test():
     args = arg_parser()
     print( args )
