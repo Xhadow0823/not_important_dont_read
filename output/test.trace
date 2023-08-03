@@ -1,0 +1,6 @@
+# tracer:nop
+MDLA-0 [0] .... 0.000001: tracing_mark_write: B|87|work
+MDLA-1 [0] .... 0.000002: tracing_mark_write: B|87|0
+MDLA-1 [0] .... 0.000002: tracing_mark_write: B|87|0
+MDLA-0 [0] .... 0.000005: tracing_mark_write: E|87
+MDLA-1 [0] .... 0.000006: tracing_mark_write: E|87
